@@ -1,0 +1,78 @@
+#Iniciar un proyecto con git
+
+-git init
+//inicializa un proyecto git
+
+-git status
+//Que archivos estamos trabajando
+
+#Añadir un archivo
+
+-git add <status>
+//añade un archivo al staging area
+
+-git add .
+//Agrega todo
+
+#Hacer un snapshot
+
+-git commit
+//Crea un primer punto de control de nuestro codigo
+
+Sin embargo, nos pedirá que ingresemos quien está haciendo los cambios
+Por eso tendremos que configurar con la siguiente instruccion:
+
+-git config --global user.email "<email>"
+//Configura el email de este usuario
+
+-git config --global user.name "<name>"
+//Configura el nombre de este usuario
+
+Una vez hecho eso :
+
+-git commit
+-git commit -m "<mensaje>"
+
+Se abrirá un bin para trabajar. Si usas -m solo detallá lo que has hecho
+
+
+Pulasar <i> : "Escribir un comentario"
+Pulsar <:wq> : Para salir
+
+-git log
+//Para ver todos los commits que hemos creado
+
+# Haciendo Cambios al archivo antes de hacer un commit 
+
+-git checkout -- <nombre del archivo>
+//Revierte los cambios de los archivos
+
+-git diff <nombre del archivo>
+//Ver las diferencias hechas en los archivos
+
+Si queremos ignorar un folder para que el git no lo cuente:
+Creamos un documento con nombre : .gitignore
+Y en el pondremos el nombre de las carpetas o archivos que queremos ignorar
+
+# Crear una nueva rama
+
+-git branch
+//Ve las lineas que hay en nuestro git
+
+-git branch <nombre de la nueva linea>
+//Crea otra linea. Por lo general, para no afectar al master
+
+-git checkout <nombre del branch>
+//Cambia de rama.
+
+#Subir al repositorio (Usando github)
+-git remote add origin https://github.com/paul-sketch/gitTest.git
+
+-git push -u origin master
+
+#Descargar el proyecto (clonar)
+
+-git clone <url del proyecto>
+
+
+
