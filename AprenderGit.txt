@@ -67,8 +67,10 @@ Y en el pondremos el nombre de las carpetas o archivos que queremos ignorar
 
 #Subir al repositorio (Usando github)
 -git remote add origin https://github.com/paul-sketch/gitTest.git
+//Crea el repositorio
 
 -git push -u origin master
+//Guarda el repositorio
 
 #Descargar el proyecto (clonar)
 
